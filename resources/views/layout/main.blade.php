@@ -6,7 +6,7 @@
 
     <title>@yield('content-title')</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" type=""
+    <link rel="stylesheet" type="text/css" href="/css/footer.css">
 </head>
 <body>
     @include('layout.header')
