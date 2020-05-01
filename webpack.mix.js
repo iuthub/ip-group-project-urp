@@ -11,4 +11,4 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.styles('resources/sass/style.css', 'public/css/style.css');
+mix.styles('resources/sass/footer.css', 'public/css/footer.css');
