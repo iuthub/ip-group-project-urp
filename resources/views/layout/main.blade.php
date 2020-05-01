@@ -7,69 +7,93 @@
     <title>@yield('content-title')</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
 </head>
 <body>
     @include('layout.header')
-    <div class="slideshow-container">
-        <!slideshow>
-
-        <div class="mySlides fade">
-            <img src="images/images.png" style="width:100%">
+    <div class="events">
+        <h3>Coming Events</h3>
+        <div class="events_branch">
+        <div class="event_box">
+            <h4>Event name</h4>
+            <p>"At vero eos et accusamuset iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupt</p>
         </div>
-
-        <div class="mySlides fade">
-            <img src="images/game.jpg" style="width:100%">
+        <div class="event_box">
+            <h4>Event name</h4>
+            <p>"At vero eos et accusamuset iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupt</p>
         </div>
-
-        <div class="mySlides fade">
-            <img src="images/leonardo.jpg" style="width:100%">
+        <div class="event_box">
+            <h4>Event name</h4>
+            <p>"At vero eos et accusamuset iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupt</p>
         </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+        <div class="event_box">
+            <h4>Event name</h4>
+            <p>"At vero eos et accusamuset iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupt</p>
+        </div>
+        <div class="event_box">
+            <h4>Event name</h4>
+            <p>"At vero eos et accusamuset iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupt</p>
+        </div>
+        <div class="event_box">
+            <h4>Event name</h4>
+            <p>"At vero eos et accusamuset iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupt</p>
+        </div>
+        </div>
     </div>
-        <br>
-
-    <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+    
+    <div class="news">
+        <div class="news-page">
+                <h3 class="news">News</h3>
+            <div class="news_page">
+                <div class="news_card">
+                    <img src="./img/news1.jpg" class="news_img">
+                    <div class="news_par">
+                        <h4>Meeting in Conference hall</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum et animi ex. Odit obcaecati eos incidunt repellendus nihil tempore iure doloremque</p>
+                    </div>
+                </div>
+                <div class="news_card">
+                    <img src="./img/news2.jpg" class="news_img">
+                    <div class="news_par">
+                        <h4>Meeting in Conference hall</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum et animi ex. Odit obcaecati eos incidunt repellendus nihil tempore iure doloremque</p>
+                    </div>
+                </div>
+                <div class="news_card">
+                    <img src="./img/news3.jpg" class="news_img">
+                    <div class="news_par">
+                        <h4>Meeting in Conference hall</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum et animi ex. Odit obcaecati eos incidunt repellendus nihil tempore iure doloremque</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-        }
-    </script>
+    <div class="register"><div class="submit_form">
+            <h3>Register</h3><br>
+                <form action="" id="contect-form" method="post">
+                    <div class="reg">
+                        <input type="text" name="name" class="form-control" placeholder="Name" required><br>
+                        <input type="text" name="name" class="form-control" placeholder="Surname" required><br>
+                        <input type="emain" name="email" class="form-control" placeholder="Email" required><br>                          
+                        <textarea name="message" class="form-control" placeholder="message" rows="1" required></textarea> <br> 
+                    </div>
+                    <div class="submit_form">
+                        <input type="submit" class="submit" value="SUBMIT"><br>
+                    </div>   
+                </form>
+            </div></div>
+    <div class="our_platform">
+        <div class="img_platform">
+            <img src="img/Group 1.png" alt="">
+        </div>
+        <div class="text_platform">
+            <h3>Our Platform</h3>
+            <p>Collaborative Security Workspace Community Powered Solutions Native Workflow Automation Connected Analytics</p>
+            <a href="#">Find your course </a>
+        </div>
+    </div>
     @include('layout.footer')
 </body>
 </html>
