@@ -28,7 +28,7 @@
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     max-width: 100%;
     flex-basis: auto;
     background-color: white
