@@ -1,15 +1,121 @@
+html { 
+   background-color: #bbb;
+   height: 100%;
+  }
+.header {
+    background-color: rgb(127, 117, 221);
+    background-size: cover;
+    min-height: 740px;
+}
+.header_box {
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.login_btn {
+    margin: 0 0 0 30px;
+    border: 1px solid #8A31E2;
+    border-radius: 30px;
+    padding: 10px; 
+    background-color: #8A31E2;
+}
+.login_btn:hover {
+    -webkit-box-shadow: 0px 0px 70px -1px rgba(0,64,255,1);
+    -moz-box-shadow: 0px 0px 70px -1px rgba(0,64,255,1);
+    box-shadow: 0px 0px 70px -1px rgba(0,64,255,1);
+    color: #fff;
+}
+.header_img img{
+    
+    width: 400px;
+}
+.header_icon  {
+    font-size: 40px;
+    text-align: center;
+}
+.header_text_top {
+    float: right;
+}    
+.header_text_top p  {
+    padding: 20px;
+    font-size: 18px;
+}
+.header_text_top h2 {
+    font-size: 28px;
+    padding-right: 60px;
+    text-align: right;
+}  
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 70px;
+}
+
+.search_box {
+  height: 40px;
+  border-radius: 40px;
+  align-items: center;
+}
+.search_btn {
+    font-size: 20px;
+    color: #6152EE;
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search_txt {
+    border: 1px solid #6152EE;
+    border-radius: 40px;
+    background: none;
+    outline: none;
+    float: right;
+    padding: 0;
+    color: #8A31E2;
+    font-size: 18px;
+    transition: 0.4s;
+    line-height: 30px;
+    width: 350px;
+    padding: 5px;
+}
+.logo p {
+    font-size: 30px;
+}
+.slideshow-container, .fade {
+    height: 420px;
+    width: 800px;
+}
+.slideshow-container .mylides {
+    background-size: cover;
+}
+.menu {
+    font-size: 18px;
+}
+.menu  a:not(:last-child){
+    padding: 20px;
+}
+.menu a:hover:not(:last-child) {
+    color: #6152EE;
+}
 .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: rgb(0, 0, 0);
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
 .dot:hover {
-    background-color: #717171;
+    background-color: #6152EE;
 }
 .prev_icon {
     display: flex;
@@ -20,9 +126,9 @@
     position: relative;
     top: 50%;
     width: auto;
-    color: #000;
+    color: rgb(44, 48, 255);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 25px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
