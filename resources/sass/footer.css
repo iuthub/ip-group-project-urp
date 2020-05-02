@@ -26,11 +26,8 @@ li {
     padding: 5px;
     color: #3b3b3bcc;
 }
-p {
-    text-align: center;
-
-}
 .social_footer {
+    text-align: center;
     font-size: 20px;
 }
 .menu_footer {
