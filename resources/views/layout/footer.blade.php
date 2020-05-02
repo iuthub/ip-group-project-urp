@@ -1,11 +1,9 @@
 <footer>
         <div class="menu_footer">
             <ul class="menu_list">
-                <li><a href="#">Main</a></li>
                 <li><a href="#">Events</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Register</a></li>
-                <li><a href="#">Sign in</a></li>
+                <li><a href="#">Contact Us</a></li>
             </ul>
         </div>
             <div class="social_footer">
@@ -14,7 +12,7 @@
                     <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
                     <li><a href="#"><i class="fab fa-vk"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="http://localhost:8000/contact"><i class="fab fa-instagram"></i></a></li>
                 </div>
             </div>
             <div class="adress_footer">
