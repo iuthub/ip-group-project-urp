@@ -5,6 +5,7 @@
 @endsection
 
 @section('content-body')
+    <br><br>
     <div class="events">
         <h3>Coming Events</h3>
         <div class="events_branch">

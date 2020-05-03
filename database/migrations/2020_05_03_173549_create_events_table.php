@@ -17,9 +17,9 @@ class CreateEventsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('organization');
-            $table->dateTime('date');
+            $table->date('date');
             $table->string('place');
-            $table->string('requirements');
+            $table->text('requirements');
             $table->timestamps();
         });
     }

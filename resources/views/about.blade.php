@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('content-title')
-    About
+    About URP
 @endsection
 
 @section('content-body')

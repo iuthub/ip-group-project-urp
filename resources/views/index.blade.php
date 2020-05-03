@@ -5,5 +5,5 @@
 @endsection
 
 @section('content-body')
-    <h3>Grizly</h3><br>
+    @include('layout.slider')
 @endsection

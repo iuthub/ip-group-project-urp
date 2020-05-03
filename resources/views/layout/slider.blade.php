@@ -5,7 +5,6 @@
                 <h2>Unique Registration Platform</h2>
                 <p>Is the awesome platform to find event for any situation and time. </p>
             </div>
-
             <div class="slideshow-container">
                 <div class="slideshow-container">
                     <div class="mySlides fade">
@@ -35,11 +34,9 @@
                     function plusSlides(n) {
                         showSlides(slideIndex += n);
                     }
-
                     function currentSlide(n) {
                         showSlides(slideIndex = n);
                     }
-
                     function showSlides(n) {
                         var i;
                         var slides = document.getElementsByClassName("mySlides");

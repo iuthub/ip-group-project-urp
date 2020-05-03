@@ -15,21 +15,23 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('mainPage');
 //Route::get('/contact', function () {
 //    return view('contact');
 //});
-Route::get('/contact', 'ContactController@getContactPage');
+Route::get('/contact', 'ContactController@getContactPage')->name('contactPage');
+
+Route::post('/contact/submit', 'ContactController@submitContact')->name('contactSubmit');
+
 
 Route::get('/about', function () {
     return view('about');
 });
-Route::get('/event/registration', function () {
-    return view('eregister');
-});
-Route::get('/events', function (){
-    return view('events');
-});
-Route::get('/events/ID', function (){
+
+Route::get('/events', 'EventController@getEventPage')->name('eventPage');
+Route::get('/event/registration', 'EventController@getEventRegistrationPage')->name('registerEventPage');
+Route::post('/event/registration', 'EventController@registerEvent')->name('registerEvent');
+
+Route::get('/events/{id}', function (){
     return view('events');
 });

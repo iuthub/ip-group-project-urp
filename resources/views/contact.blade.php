@@ -5,14 +5,16 @@
 @endsection
 
 @section('content-body')
+    <br>
     <div class="register">
         <div class="submit_form">
             <h3>Contact Us</h3><br>
-            <h2>You leave your message</h2><br>
-            <form action="" id="contect-form" method="post">
+            <h2>You can leave your message</h2><br>
+            @include('layout.messages')
+            <form action={{ route('contactSubmit') }}  method="post">
+                @csrf
                 <div class="reg">
                     <input type="text" id="name" name="name" class="form-control" placeholder="Name" required><br>
-                    <input type="text" id="surname" name="name" class="form-control" placeholder="Surname" required><br>
                     <input type="emain" id="email" name="email" class="form-control" placeholder="Email" required><br>
                     <textarea name="message" id="message" class="form-control" placeholder="Message" rows="1" required></textarea> <br>
                 </div>
@@ -22,4 +24,5 @@
             </form>
         </div>
     </div>
+    <br>
 @endsection
