@@ -13,7 +13,36 @@
 <body>
     @include('layout.header')
     @yield('content-body')
-
+    <br><br>
+    <div class="events">
+        <h3>Coming Events</h3>
+        <div class="events_branch">
+            <div class="event_box">
+                <h4>Event name</h4>
+                <p>"At vero eos et accusamuset iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupt</p>
+            </div>
+            <div class="event_box">
+                <h4>Event name</h4>
+                <p>"At vero eos et accusamuset iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupt</p>
+            </div>
+            <div class="event_box">
+                <h4>Event name</h4>
+                <p>"At vero eos et accusamuset iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupt</p>
+            </div>
+            <div class="event_box">
+                <h4>Event name</h4>
+                <p>"At vero eos et accusamuset iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupt</p>
+            </div>
+            <div class="event_box">
+                <h4>Event name</h4>
+                <p>"At vero eos et accusamuset iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupt</p>
+            </div>
+            <div class="event_box">
+                <h4>Event name</h4>
+                <p>"At vero eos et accusamuset iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupt</p>
+            </div>
+        </div>
+    </div>
     <div class="news">
         <div class="news-page">
                 <h3 class="news">News</h3>

@@ -6,4 +6,5 @@
 
 @section('content-body')
     @include('layout.slider')
+
 @endsection
