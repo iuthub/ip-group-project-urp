@@ -9,38 +9,45 @@
     <link rel="stylesheet" type="text/css" href="/css/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
 </head>
 <body>
     @include('layout.header')
     @yield('content-body')
 
-    <div class="news">
-        <div class="news-page">
-                <h3 class="news">News</h3>
-            <div class="news_page">
-                <div class="news_card">
-                    <img src="./img/news1.jpg" class="news_img">
-                    <div class="news_par">
-                        <h4>Meeting in Conference hall</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum et animi ex. Odit obcaecati eos incidunt repellendus nihil tempore iure doloremque</p>
+    <div class="popular">
+        <div class="popular-page">
+                <h3 class="popular">Popular Events</h3>
+            <div class="popular_page">
+                <div class="popular_card"><a href="/events">
+                    <img src="./img/news1.jpg" class="popular_img">
+                    <div class="popular_par">                
+                        <h4>Meeting in Conference hall</h4></a>
+                        <b>Tomorrow at 7:30 PM</b>
                     </div>
+                    
                 </div>
-                <div class="news_card">
-                    <img src="./img/news2.jpg" class="news_img">
-                    <div class="news_par">
-                        <h4>Meeting in Conference hall</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum et animi ex. Odit obcaecati eos incidunt repellendus nihil tempore iure doloremque</p>
+                <div class="popular_card"><a href="/events">
+                    <img src="./img/news2.jpg" class="popular_img">
+                    <div class="popular_par">
+                        <h4>Meeting in Conference hall</h4></a>
+                        <b>Thu, May 7, 8:00 AM</b>
                     </div>
+                    
                 </div>
-                <div class="news_card">
-                    <img src="./img/news3.jpg" class="news_img">
-                    <div class="news_par">
-                        <h4>Meeting in Conference hall</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum et animi ex. Odit obcaecati eos incidunt repellendus nihil tempore iure doloremque</p>
+                <div class="popular_card"><a href="/events">
+                    <img src="./img/news3.jpg" class="popular_img">
+                    <div class="popular_par">
+                        <h4>Meeting in Conference hall</h4></a>
+                        <b>Fri, Jun 19, 6:00 PM</b>
                     </div>
+                    
                 </div>
             </div>
         </div>
+        <div class="event_btn">
+                        <a href="/events">See more Events</a>
+                    </div>
     </div>
     <div class="our_platform">
         <div class="img_platform">
