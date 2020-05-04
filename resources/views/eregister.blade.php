@@ -16,7 +16,7 @@
                 <div class="reg">
                     <input type="text" id="name" name="name" class="form-control" placeholder="Name" required><br>
                     <input type="text" id="organization" name="organization" class="form-control" placeholder="Organization" required><br>
-                    <input id="date" name="date" type="date"><br>
+                    <input class="form-control" id="date" name="date" type="date"><br>
                     <input type="text" id="place" name="place" class="form-control" placeholder="Place (address)" required><br>
                     <textarea name="requirements" id="requirements" class="form-control" placeholder="Requirements" rows="1" required></textarea> <br>
                 </div>
