@@ -14,6 +14,8 @@
 <body>
     @include('layout.header')
     @yield('content-body')
+<div class="main">
+    
 
     <div class="popular">
         <div class="popular-page">
@@ -61,5 +63,6 @@
     </div>
 
     @include('layout.footer')
+</div>
 </body>
 </html>
