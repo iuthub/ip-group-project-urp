@@ -6,5 +6,5 @@
 
 @section('content-body')
     @include('layout.slider')
-
+    @include('layout.popular')
 @endsection

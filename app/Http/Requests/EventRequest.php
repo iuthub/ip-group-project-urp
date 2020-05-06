@@ -28,7 +28,8 @@ class EventRequest extends FormRequest
             'organization'=>'required|min:10',
             'date'=>'required',
             'place'=>'required',
-            'requirements'=>'required'
+            'requirements'=>'required|min:10',
+            'description'=>'required|min:200'
         ];
     }
 }

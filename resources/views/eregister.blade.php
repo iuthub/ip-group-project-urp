@@ -18,7 +18,8 @@
                     <input type="text" id="organization" name="organization" class="form-control" placeholder="Organization" required><br>
                     <input class="form-control" id="date" name="date" type="date"><br>
                     <input type="text" id="place" name="place" class="form-control" placeholder="Place (address)" required><br>
-                    <textarea name="requirements" id="requirements" class="form-control" placeholder="Requirements" rows="1" required></textarea> <br>
+                    <textarea name="requirements" id="requirements" class="form-control" placeholder="Requirements" rows="1" required></textarea>
+                    <textarea name="description" id="description" class="form-control" placeholder="Description" rows="1" required></textarea> <br>
                 </div>
                 <div class="submit_form">
                     <input type="submit" id="submit" class="submit" value="SUBMIT"><br>

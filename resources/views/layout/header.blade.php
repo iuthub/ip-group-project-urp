@@ -11,13 +11,13 @@
         <a id="main" href={{ route('mainPage') }}>Main</a>
         <a id="events" href={{ route('eventPage') }}>Events</a>
         @guest
-                <a href="{{ route('login') }}">{{ __('Login') }}</a>
+                <a class="login_btn" href="{{ route('login') }}">{{ __('Login') }}</a>
             @if (Route::has('register'))
-                <a href="{{ route('register') }}">{{ __('Register') }}</a>
+                <a class="reg_btn" href="{{ route('register') }}">{{ __('Register') }}</a>
             @endif
         @else
             <a id="eregister" href={{ route('registerEvent') }}>Register Event</a>
-                <a href="{{ route('logout') }}"
+                <a class="logout_btn" href="{{ route('logout') }}"
                    onclick="event.preventDefault();
                    document.getElementById('logout-form').submit();">
                     {{ __('Logout') }}
