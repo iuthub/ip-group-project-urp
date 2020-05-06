@@ -21,6 +21,7 @@ class EventController extends Controller
         $event->place = $req->input('place');
         $event->date = $req->input('date');
         $event->requirements = $req->input('requirements');
+        $event->description = $req->input('description');
 
         $event->save();
 
