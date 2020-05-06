@@ -10,7 +10,21 @@
     <div class="menu">
         <a id="main" href={{ route('mainPage') }}>Main</a>
         <a id="events" href={{ route('eventPage') }}>Events</a>
-        <a id="eregister" href={{ route('registerEventPage') }}>Register Event</a>
-        <a class="login_btn" id="login" href="#">LogIn/SignUp</a>
+        @guest
+                <a href="{{ route('login') }}">{{ __('Login') }}</a>
+            @if (Route::has('register'))
+                <a href="{{ route('register') }}">{{ __('Register') }}</a>
+            @endif
+        @else
+            <a id="eregister" href={{ route('registerEvent') }}>Register Event</a>
+                <a href="{{ route('logout') }}"
+                   onclick="event.preventDefault();
+                   document.getElementById('logout-form').submit();">
+                    {{ __('Logout') }}
+                </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
+        @endguest
     </div>
 </div>
