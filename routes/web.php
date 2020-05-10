@@ -11,9 +11,18 @@ Route::post('/contact/submit', 'ContactController@submitContact')->name('contact
 Route::get('/about', function () {
     return view('about');
 });
-Route::get('/events', 'EventController@getEventPage')->name('eventPage');
-Route::get('/event/registration', 'EventController@getEventRegistrationPage')->name('registerEventPage');
-Route::post('/event/registration', 'EventController@registerEvent')->name('registerEvent');
+Route::get(
+    '/events',
+    'EventController@getEventPage'
+)->name('eventPage');
+Route::get(
+    '/event/registration',
+    'EventController@getEventRegistrationPage'
+)->name('registerEventPage');
+Route::post(
+    '/event/registration',
+    'EventController@registerEvent'
+)->name('registerEvent');
 Route::get('/events/{id}', function (){
     return view('events');
 });

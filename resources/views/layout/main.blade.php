@@ -15,7 +15,7 @@
     @include('layout.header')
     @yield('content-body')
 <div class="main">
-    
+
 
     <br><br>
     <div class="our_platform">
@@ -25,7 +25,7 @@
         <div class="text_platform">
             <h3>Our Platform</h3>
             <p>Collaborative Security Workspace Community Powered Solutions Native Workflow Automation Connected Analytics</p>
-            <a href="#">Find your course </a>
+            <a href="{{ route('eventPage') }}">Find your event</a>
         </div>
     </div>
 
